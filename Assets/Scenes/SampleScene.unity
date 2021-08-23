@@ -197,7 +197,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1199fd91d8d8f4d43a25ceadc98f30a7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -288,7 +288,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 478460519}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: brazo der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,7 +413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 706966831}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: brazo izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717855253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9732489, y: 0.63, z: -10.169712}
+  m_LocalPosition: {x: 1.0946996, y: 13.089137, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1587140145}
@@ -528,8 +528,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: -75
+    m_UpperAngle: 75
 --- !u!50 &750395190
 Rigidbody2D:
   serializedVersion: 4
@@ -546,7 +546,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1199fd91d8d8f4d43a25ceadc98f30a7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -590,7 +590,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1639358223
   m_SortingLayer: 1
-  m_SortingOrder: 8
+  m_SortingOrder: 15
   m_Sprite: {fileID: 7878569213149529315, guid: 6f6e78542e9a48e44b3285e76ab7b26b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -684,8 +684,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: 75
+    m_UpperAngle: -75
 --- !u!50 &862511167
 Rigidbody2D:
   serializedVersion: 4
@@ -702,7 +702,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1199fd91d8d8f4d43a25ceadc98f30a7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -797,7 +797,7 @@ GameObject:
   - component: {fileID: 915918724}
   - component: {fileID: 915918723}
   - component: {fileID: 915918726}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: brazo dere-02_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -858,7 +858,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1199fd91d8d8f4d43a25ceadc98f30a7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -1025,6 +1025,7 @@ GameObject:
   - component: {fileID: 1097146054}
   - component: {fileID: 1097146053}
   - component: {fileID: 1097146052}
+  - component: {fileID: 1097146055}
   m_Layer: 3
   m_Name: cabeza-02_0
   m_TagString: Untagged
@@ -1068,8 +1069,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: 75
+    m_UpperAngle: -75
 --- !u!50 &1097146053
 Rigidbody2D:
   serializedVersion: 4
@@ -1086,7 +1087,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1199fd91d8d8f4d43a25ceadc98f30a7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -1142,6 +1143,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1097146055
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097146050}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.05072125, y: 0.3480357}
+  serializedVersion: 2
+  m_Radius: 0.5941644
 --- !u!1 &1127680544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,7 +1172,7 @@ GameObject:
   - component: {fileID: 1127680547}
   - component: {fileID: 1127680546}
   - component: {fileID: 1127680549}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: brazo izq-02_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1216,7 +1233,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1199fd91d8d8f4d43a25ceadc98f30a7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -1260,7 +1277,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1639358223
   m_SortingLayer: 1
-  m_SortingOrder: 7
+  m_SortingOrder: 12
   m_Sprite: {fileID: -1492003137443473224, guid: ed92ae97c69cad448afcdf130e82a5bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1414,7 +1431,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1199fd91d8d8f4d43a25ceadc98f30a7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -1430,8 +1447,8 @@ GameObject:
   - component: {fileID: 1857433842}
   - component: {fileID: 1857433841}
   - component: {fileID: 1857433843}
-  m_Layer: 0
-  m_Name: Square
+  m_Layer: 7
+  m_Name: Stage Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1602,7 +1619,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1199fd91d8d8f4d43a25ceadc98f30a7, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
